@@ -10,15 +10,21 @@ Sistem ini dirancang dengan arsitektur **Authoritative Client-Server (TCP/IPv4)*
 
 ## Fitur Utama (Engineering Highlights)
 
-- **Custom JSON Parser:** Implementasi modul pembaca token JSON secara manual murni menggunakan metode `std::string` bawaan C++ (`find`, `substr`) untuk memastikan portabilitas tanpa membebani kompilator dengan *library* eksternal.
-- **Network Synchronization:** Sinkronisasi jaringan *real-time* berbasis `Winsock2` dengan jaminan keandalan transmisi *Three-way Handshake* TCP[cite: 68, 125, 126]. [cite_start]Server memanfaatkan *blocking I/O* untuk sinkronisasi dua klien secara mulus.
-- **4 Pillars of OOP Architecture:** - **Abstraksi & Enkapsulasi:** Kelas dasar `Character` berstatus *pure abstract* dengan atribut memori vital (`hp`, `baseMinAtk`) yang terkunci rapat.
-  - **Pewarisan & Polimorfisme:** Penurunan *class* ke 3 faksi unik (`Knight`, `Assassin`, `Paladin`) menggunakan *Dynamic Binding* (`virtual override`) untuk kalkulasi kalkulasi pasif unit.
+- **Custom JSON Parser:** 
+Implementasi modul pembaca token JSON secara manual murni menggunakan metode `std::string` bawaan C++ (`find`, `substr`) untuk memastikan portabilitas tanpa membebani kompilator dengan *library* eksternal.
+- **Network Synchronization:** 
+Sinkronisasi jaringan *real-time* berbasis `Winsock2` dengan jaminan keandalan transmisi *Three-way Handshake* TCP. Server memanfaatkan *blocking I/O* untuk sinkronisasi dua klien secara mulus.
+- **4 Pillars of OOP Architecture:** 
+  - **Abstraksi & Enkapsulasi:** 
+  Kelas dasar `Character` berstatus *pure abstract* dengan atribut memori vital (`hp`, `baseMinAtk`) yang terkunci rapat.
+  - **Pewarisan & Polimorfisme:** 
+  Penurunan *class* ke 3 faksi unik (`Knight`, `Assassin`, `Paladin`) menggunakan *Dynamic Binding* (`virtual override`) untuk kalkulasi kalkulasi pasif unit.
 - **Manual Data Structures & Algorithms:**
   - Penyimpanan memori riwayat dinamis menggunakan `std::vector`.
   - Mesin *ranking* pertempuran yang dibangun dari nol menggunakan algoritma pemilahan rekursif **Quick Sort**.
   - Fitur pelacakan riwayat spesifik menggunakan algoritma iterasi berurutan **Linear Search**.
-- **Precision CLI UI:** Rendering terminal antarmuka pengguna diatur dengan ketat menggunakan *stream modifiers* (`std::setw`, `std::right`, `std::setfill`) untuk menciptakan *grid* visual asimetris yang tangguh dari cacat *rendering*.
+- **Precision CLI UI:** 
+Rendering terminal antarmuka pengguna diatur dengan ketat menggunakan *stream modifiers* (`std::setw`, `std::right`, `std::setfill`) untuk menciptakan *grid* visual asimetris yang tangguh dari cacat *rendering*.
 
 ## Persyaratan Sistem
 
