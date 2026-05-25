@@ -68,11 +68,8 @@ g++ src/client.cpp -o client.exe -lws2_32
 
 Tugas Akhir Algoritma dan Pemrograman - Departemen Teknik Elektro, Fakultas Teknik Universitas Indonesia.
 
-* 
-**Maheztha Sulthan Syadi** (NPM: 2506609574) 
+* **Maheztha Sulthan Syadi** (NPM: 2506609574) 
 
-* 
-**Mohamad Rafly Nursidiq** (NPM: 2506608691) 
+* **Mohamad Rafly Nursidiq** (NPM: 2506608691) 
 
-* 
-**Falsya Hizri Anbiya** (NPM: 2506603135) 
+* **Falsya Hizri Anbiya** (NPM: 2506603135) 
